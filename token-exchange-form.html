@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>TikTok Sandbox Token Exchange</title></head>
+<body>
+<h1>TikTok Sandbox Token Exchange (form POST, no JavaScript)</h1>
+<p>Fill client_key, client_secret and code from the Sandbox tabs, then submit. The token endpoint returns JSON.</p>
+<form action="https://open.tiktokapis.com/v2/oauth/token/" method="POST">
+  <label>client_key <input type="text" name="client_key" size="60"></label><br>
+  <label>client_secret <input type="text" name="client_secret" size="60"></label><br>
+  <label>code <input type="text" name="code" size="120"></label><br>
+  <label>grant_type <input type="text" name="grant_type" value="authorization_code"></label><br>
+  <label>redirect_uri <input type="text" name="redirect_uri" size="80" value="https://17521100670-rgb.github.io/arttrong-autopost-site/"></label><br>
+  <button type="submit">Exchange code for token</button>
+</form>
+</body>
+</html>
